@@ -1,0 +1,28 @@
+body{
+	color: gray;
+	background: url("http://sereedmedia.com/srmwp/wp-content/uploads/kitten.jpg"); 
+	opacity:1.5; 
+	background-size: cover;
+	line-height: 150%;
+	text-align: justify;
+	padding: 25px 100px 15px 100px;
+	font-family:Tahoma, Geneva, sans-serif
+}
+h1{
+	color: #ff0066;
+	font-size: 50px;
+	text-align: left;
+}
+h2{
+	font-size: 35px;
+}
+div {
+	font-size: 18px;
+	text-align: left;
+	line-height: 100%;
+}
+ul{
+	font-size: 18px;
+	text-align: left;
+	list-style-type: none;
+}
