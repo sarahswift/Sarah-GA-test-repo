@@ -32,6 +32,8 @@ border-left: 2px solid #E8E8E8;
 	padding-bottom: .1em;
 	margin-right: .7em;
 	border-bottom: 2px solid red;
+	border-right: 2px solid red;
+	padding-right: 2em;
 	color:red;
 	text-decoration: none;
 }
