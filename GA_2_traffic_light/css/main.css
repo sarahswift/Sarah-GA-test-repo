@@ -1,13 +1,60 @@
-.trafficLight {
-	height: 600px;
+#trafficLight {
+	height: 700px;
 	width: 300px;
 	background-color: black;
+	float: left;
+	margin-right: 20px;
 }
 
-.redLight {
+#trafficButtons {
+	height: 700px;
+	width: 300px;
+	background-color: black;
+	float: left;
+}
+
+.light {
 	height: 200px;
 	width: 200px;
-	background-color: red;
 	border-radius: 50%;
-	z-index: 1;
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.red {
+	background-color: red;
+}
+
+.yellow {
+	background-color: yellow;
+}
+
+.green {
+	background-color: green;
+}
+
+.button {
+	height: 150px;
+	width: 200px;
+	margin-left: 50px;
+	margin-top: 60px;
+}
+
+.stop {
+	background-color: red;
+}
+
+.caution {
+	background-color: yellow;
+}
+
+.go {
+	background-color: green;
+}
+
+p {
+	font-size: 30px;
+	color: white;
+	text-align:center; 
+  	padding-top: 50px;
 }
