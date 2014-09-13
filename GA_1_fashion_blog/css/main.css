@@ -2,10 +2,11 @@ body{
 font-family: 'Lato', sans-serif;
 font-size: 18px;
 color: gray;
-font-weight: thin 100;
+font-weight: 100; /* You need just '100', not 'thin 100'. */
 margin-right: 50px;
 padding-left: 50px;
 border-left: 2px solid #E8E8E8;
+padding-left: 0; /* The User Agent stylesheet set a padding-left of 8 in Chrome, but that made the left gray stripe not flush with the left side of the browser. */
 }
 
 #title{
@@ -26,16 +27,23 @@ border-left: 2px solid #E8E8E8;
 #mainContent{
 	margin-top: 50px;
 	line-height: 1.5;
+    width: 920px; /* Added width so page matches design comp. It would have been better to have individual parent containers, or wrappers, for each post and to target both posts using a single class */
 }
 
 #footerNav a{
 	padding-bottom: .1em;
 	margin-right: .7em;
+    /* Cool effect, but it doesn't match the design comp.
 	border-bottom: 2px solid red;
-	border-right: 2px solid red;
+    */
+	border-right: 2px solid gray;
 	padding-right: 2em;
 	color:red;
 	text-decoration: none;
+}
+
+#footerNav a:last-child {
+    border-right: none; /* Last link doesn't have a divider to its right. */
 }
 
 .fadedText{
