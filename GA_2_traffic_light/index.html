@@ -3,26 +3,21 @@
 <head>
 	<title>Sarah's traffic light</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="js/application.js"></script>
 </head>
 <body>
 	<div id="trafficLight"> 
-		<div class="red light"> 
+		<div class="light greenLight"> 
 		</div>
-		<div class="yellow light"> 
+		<div class="light yellowLight"> 
 		</div>
-		<div class="green light"> 
+		<div class="light redLight"> 
 		</div>
 	</div>
 	<div id="trafficButtons">
-		<div class="stop button">
-			<p>STOP</p>
-		</div>
-		<div class="caution button">
-			<p>CAUTION</p>
-		</div>
-		<div class="go button">
-			<p>GO</p>
-		</div>
+		<p class="button" onclick="buttonClick('stop')">Stop</p>
+		<p class="button" onclick="buttonClick('caution')">Caution</p>
+		<p class="button" onclick="buttonClick('go')">Go</p>
 	</div>
 </body>
 </html>
