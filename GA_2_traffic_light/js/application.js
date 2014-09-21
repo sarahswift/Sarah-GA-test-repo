@@ -1,13 +1,15 @@
-function buttonClick(){
+function buttonClick(lightToBeTurnedOn){
 
     // You're using classes in your index.html file, but trying to obtain the lights via their idbelow. You can either use getElementsByClassName or use id's in your markup.
+    var greenLight = document.getElementById("greenLight"); 
     var yellowLight = document.getElementById("yellowLight");
     var redLight = document.getElementById("redLight");
-    var greenLight = document.getElementById("greenLight"); 
+    
 
     yellowLight.style.backgroundColor = "black";
     redLight.style.backgroundColor = "black"; 
     greenLight.style.backgroundColor = "black";
+
 
     // "buttonClick" is our method, so we shouldn't check if buttonClick("Go") is true or false
     // We do know that the argument lightToBeTurnedOn will be "Go" for the green light, so you were on the right track

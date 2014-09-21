@@ -7,17 +7,17 @@
 </head>
 <body>
 	<div id="trafficLight"> 
-		<div class="light greenLight"> 
+		<div class="light" id="greenLight"> 
 		</div>
-		<div class="light yellowLight"> 
+		<div class="light" id="yellowLight"> 
 		</div>
-		<div class="light redLight"> 
+		<div class="light" id="redLight"> 
 		</div>
 	</div>
 	<div id="trafficButtons">
-		<p class="button" onclick="buttonClick('stop')">Stop</p>
-		<p class="button" onclick="buttonClick('caution')">Caution</p>
 		<p class="button" onclick="buttonClick('go')">Go</p>
+		<p class="button" onclick="buttonClick('caution')">Caution</p>
+		<p class="button" onclick="buttonClick('stop')">Stop</p>
 	</div>
 </body>
 </html>
