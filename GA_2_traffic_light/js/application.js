@@ -1,4 +1,4 @@
-function buttonClick(lightToBeTurnedOn){
+function buttonClick(){
 
     // You're using classes in your index.html file, but trying to obtain the lights via their idbelow. You can either use getElementsByClassName or use id's in your markup.
     var yellowLight = document.getElementById("yellowLight");
