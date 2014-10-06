@@ -1,4 +1,5 @@
-var images = ["img/IMG_0218 copy.jpg", "img/IMG_0221 copy.jpg", "img/IMG_0273 copy.jpg", "img/IMG_0314 copy.jpg", "img/IMG_0311 copy.jpg"]
+// Missing a semicolon
+var images = ["img/IMG_0218 copy.jpg", "img/IMG_0221 copy.jpg", "img/IMG_0273 copy.jpg", "img/IMG_0314 copy.jpg", "img/IMG_0311 copy.jpg"];
 var currentImage = 0;
 
 
