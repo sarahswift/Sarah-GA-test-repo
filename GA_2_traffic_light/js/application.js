@@ -24,13 +24,13 @@ function buttonClick(lightToBeTurnedOn){
         greenLight.style.backgroundColor = "black"; */
     }
 
-    if (lightToBeTurnedOn == "caution") {
+    if (lightToBeTurnedOn === "caution") {
         yellowLight.style.backgroundColor = "yellow";
     /* } else {
         yellowLight.style.backgroundColor = "black"; */
     } 
 
-    if (lightToBeTurnedOn == "stop") {
+    if (lightToBeTurnedOn === "stop") {
         redLight.style.backgroundColor = "red";
     /* } else {
         redLight.style.backgroundColor = "black"; */
