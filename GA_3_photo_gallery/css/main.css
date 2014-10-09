@@ -44,11 +44,11 @@ body{
 
 .btn{
 	display: inline-block;
-	color:white;
+	color: white;
 	background-color: gray;
 	padding: 20px;
 	border: 2px solid white;
-	cursor:pointer;
+	cursor: pointer;
 }
 
 .btn:hover{
@@ -56,12 +56,12 @@ body{
 }
 
 #prevButton{
-	float:left;
+	float: left;
 	margin-left: 20px;
 }
 
 #nextButton{
-	float:right;
+	float: right;
 	margin-right: 20px;
 }
 
