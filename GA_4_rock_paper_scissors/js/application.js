@@ -1,48 +1,76 @@
-var userChoice;
-var computerChoice;
-var winner;
+function userChoice(userPick){
 
-var choices = ["rock", "paper", "scissors"]
+if (userPick == "rock") {
+	$('#userPick').html(userPick);
+	}
+if (userPick == "paper") {
+	$('#userPick').html(userPick);
+	}
+if (userPick == "scissors") {
+	$('#userPick').html(userPick);
+	}
+}	
 
-//document.getElementById("rockButton").onclick = function() {userChoice()};
-function userChoice(whichButton){
-	if (whichButton === "rockButton"){
-	document.getElementById("rockButton").innerHTML = "YOU CHOSE ROCK!"
+$(document).ready(function(){
+userChoice();
+})
+
+function computerChoice(){
+var computerChoice = Math.random();
+
+if (computerChoice<=.33) {
+    computerChoice = "rock";
+} else if (computerChoice<=.66) {
+    computerChoice = "scissors";
+} else {
+    computerChoice = "paper";
 }
-//	or
-//	document.getElementById("paperButton").innerHTML = "YOU CHOSE PAPER!"
-//} 
+console.log(computerChoice);
 
-//document.getElementById("paperButton").onclick = function() {userChoice()};
-//function userChoice(){
-	//document.getElementById("paperButton").innerHTML = "YOU CHOSE PAPER!"
-//} 
+$('#computerChoice').html(computerChoice);
 
-//document.getElementById("scissorsButton").onclick = function() {userChoice()};
-//function userChoice(){
-	//document.getElementById("scissorsButton").innerHTML = "YOU CHOSE SCISSORS!"
-//} 
+}
 
-//computerChoice = choices[Math.random()*choices.length];
+$(document).ready(function(){
+computerChoice();
+})
 
-//var userWins = ["rockscissors", "paperrock", "scissorspaper"]
+function compare(userChoice, computerChoice) {
+    if(userChoice === computerChoice) {
+    alert ("The result is a tie!");
+    }
+    
+    else if(userChoice === "rock") {
+       
+        if(computerChoice === "scissors") {
+            return "Rock wins!";
+        }
+        else {
+             return "Paper wins!";
+        }
+    }
+    
+    else if(userChoice === "paper") {
+        
+        if(computerChoice === "rock") {
+            return "Paper wins!";
+        }
+        else{
+            return "Scissors wins!"
+        }
+    }
+    
+    else if(userChoice === "scissors") {
+        
+        if(computerChoice === "rock") {
+            return "Rock wins!";
+        }
+        else {
+            return "Scissors wins!"
+        }
+    }
+    
+}
 
-//function evaluate(){
-//	var msg = "Computer Wins!"
-
-//if(userChoice==computerChoice){
-//	msg = "Tie!";
-//} else { 
-//	var outCome = userChoice + computerChoice;
-//	$.each(userWins, function (index, value){
-//		if(outCome==value){
-//			msg = "You Win!";
-//		} 
-//	});
-//}
-//		return msg;
-	
-//}
-//var outcomeMsg = evaluate();
-//alert(outcomeMsg);
+compare (userChoice, computerChoice);
 

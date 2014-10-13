@@ -8,10 +8,14 @@
 <body>
 		<h1>Rock Paper Scissors</h1>
 		<p>Click a button below to make your choice!</p>
-		<div id="userButtons">
-			<p class="button" id="rockButton" onclick="userChoice()">rock</p>
-			<p class="button" id="paperButton" onclick="userChoice()">paper</p>
-			<p class="button" id="scissorsButton">scissors</p>
+		<div id="userButtons" class="cf">
+			<p class="button" id="rockButton" onclick="userChoice('rock')">rock</p>
+			<p class="button" id="paperButton" onclick="userChoice('paper')">paper</p>
+			<p class="button" id="scissorsButton" onclick="userChoice('scissors')">scissors</p> 
 		</div>
+		<p>You choose:</p>
+		<div id="userPick">...</div>
+		<p>And the computer chooses:</p>
+		<div id="computerChoice">...</div>
 </body>
 </html>
