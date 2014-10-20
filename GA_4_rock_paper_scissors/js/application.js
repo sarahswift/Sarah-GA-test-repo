@@ -9,31 +9,41 @@ if (userPick == "paper") {
 if (userPick == "scissors") {
 	$('#userPick').html(userPick);
 	}
+
+    var compChoice = computerChoice();
+    var result = compare(userPick, computerChoice); // We're comparing userPick (what the user choose) and compChoice
+    // We're getting 'result' back from compare, but we still need to show it on the page somehow
 }	
 
+// We don't want to run userChoice() when the document is ready. Rather, we'll just let it run when a button is clicked because we're using the onclick attribute in the html.
+/*
 $(document).ready(function(){
 userChoice();
 })
+*/
 
 function computerChoice(){
-var computerChoice = Math.random();
+var compChoice = Math.random(); // Be careful when using the same name over again.
 
-if (computerChoice<=.33) {
-    computerChoice = "rock";
-} else if (computerChoice<=.66) {
-    computerChoice = "scissors";
+if (compChoice<=0.33) { // Leading decimal points are confusing
+    compChoice = "rock";
+} else if (computerChoice<=0.66) {
+    compChoice = "scissors";
 } else {
-    computerChoice = "paper";
+    compChoice = "paper";
 }
-console.log(computerChoice);
+console.log(compChoice);
 
-$('#computerChoice').html(computerChoice);
-
+$('#computerChoice').html(compChoice);
+return compChoice; // we'll need to return a value from this function
 }
 
+// We'll run computerChoice() after the user makes a choice. That is, we'll run it at the end of our userChoice() function.
+/*
 $(document).ready(function(){
 computerChoice();
 })
+*/
 
 function compare(userChoice, computerChoice) {
     if(userChoice === computerChoice) {
@@ -56,7 +66,7 @@ function compare(userChoice, computerChoice) {
             return "Paper wins!";
         }
         else{
-            return "Scissors wins!"
+            return "Scissors wins!";
         }
     }
     
@@ -66,11 +76,12 @@ function compare(userChoice, computerChoice) {
             return "Rock wins!";
         }
         else {
-            return "Scissors wins!"
+            return "Scissors wins!";
         }
     }
     
 }
 
-compare (userChoice, computerChoice);
+// We'll run this after computerChoice in our userChoice function.
+//compare (userChoice, computerChoice);
 
